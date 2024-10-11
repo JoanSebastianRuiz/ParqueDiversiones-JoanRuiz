@@ -1,8 +1,20 @@
 -- 1. Obtener todas las atracciones operativas.
+
+SELECT * FROM Attraction WHERE Status="Operativa";
+
 -- 2. Listar todos los visitantes que se encuentran en la base de datos.
+SELECT * FROM Visitor;
+
 -- 3. Mostrar los eventos programados junto con su precio.
+
+SELECT Name, Price FROM Event;
+
 -- 4. Obtener el nombre y fecha de contratación de todos los empleados.
+SELECT FirstName, LastName, HireDate FROM Employee;
+
 -- 5. Listar todos los boletos vendidos y su tipo.
+SELECT TicketId, TicketType FROM Ticket;
+
 -- 6. Obtener el nombre de los visitantes y las atracciones que visitaron.
 -- 7. Listar los empleados que participaron en eventos, junto con el nombre del evento.
 -- 8. Mostrar los detalles de mantenimiento realizados por cada empleado, junto con la atracción.
